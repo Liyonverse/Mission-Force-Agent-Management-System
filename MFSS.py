@@ -61,7 +61,7 @@ def view():
         print("Mission Status : ",mission_stts[count])
         count = count +1
 def delete():
-    del_code=(input("Code Name : ")).lower()
+    del_code=(input("Code Name : "))
     print("\033[33mWARNING\033[0m")
     print("")
     print("\033[33mThis operation cannot be undone.\033[0m")
@@ -86,7 +86,7 @@ def delete():
                 count=count+1
                 continue
 def search():
-    search_code=(input("Code Name : ")).lower()
+    search_code=(input("Code Name : "))
     count=0
     while(count<len(code_name)):
         if(search_code==code_name[count]):
