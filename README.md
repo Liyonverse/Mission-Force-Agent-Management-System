@@ -1,4 +1,4 @@
-# 🛡️ Mission Force Secure Server
+# 🛡️ Mission Force Agent Management System
 
 A Python console-based application developed to manage mission force agent records efficiently. This project demonstrates CRUD (Create, Read, Update, Delete) operations using Python lists and provides an interactive command-line interface for managing agent information.
 
@@ -6,7 +6,7 @@ A Python console-based application developed to manage mission force agent recor
 
 ## 📌 Overview
 
-Mission Force Secure Server is a beginner-friendly Python project created to practice core programming concepts and data management techniques without using a database.
+Mission Force Agent Management System is a beginner-friendly Python project created to practice core programming concepts and data management techniques without using a database.
 
 The application allows users to maintain mission force agent records through an easy-to-use console interface.
 
@@ -39,7 +39,7 @@ The application allows users to maintain mission force agent records through an 
 ## 📂 Project Structure
 
 ```
-Mission-Force-Secure-Server/
+Mission Force Agent Management System/
 │
 ├── main.py
 ├── README.md
