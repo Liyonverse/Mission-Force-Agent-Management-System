@@ -7,6 +7,81 @@ mission_stts=[]
 #defines
 import os
 import time
+
+#Login_Page
+def main():
+    print("==========================================================")
+    print("          MISSION FORCE SECURE SERVER v1.0")
+    print("==========================================================")
+    print("")
+    print("Security Status : ACTIVE")
+    print("Database Status : ENCRYPTED")
+    print("Classification  : TOP SECRET")
+    print("")
+    print("Login Required...")
+    login_system()
+    print("Initializing Server...")
+    time.sleep(1)
+    print("[##########] 100%")
+    time.sleep(1)
+    print("Loading Agent Database...")
+    time.sleep(1)
+    print("Done.")
+    time.sleep(1)
+    print("Connecting...")
+    time.sleep(1)
+    print("Connection Secure.")
+    time.sleep(1)
+    #main_menu
+    os.system("cls")
+    while(True):
+        os.system("cls")
+        print("==========================================================")
+        print("          MISSION FORCE CONTROL PANEL")
+        print("==========================================================")
+        print("1. Register New Agent")
+        print("2. View All Agents")
+        print("3. Search Agent")
+        print("4. Update Agent")
+        print("5. Delete Agent")
+        print("6.Secret Terminal")
+        print("7.Exit")
+        menu_com=input("Enter Command ").lower()
+    #process
+        if (menu_com == "1"):
+            register()
+        elif (menu_com == "2"):
+            view()
+            exit_reg=input("Press Enter key to Exit...")
+            os.system("cls")
+        elif (menu_com == "3"):
+            search()
+        elif (menu_com == "4"):
+            update()
+            os.system("cls")
+        elif (menu_com == "5"):
+            delete()
+            os.system("cls")
+            continue
+        elif(menu_com == "6"):
+            terminal()
+        elif(menu_com == "7"):
+            break
+        else:
+            print("")
+            print("\033[33mERROR 302\033[0m")
+            print("\033[33mUnknown Command.\033[0m")
+            print("\033[33mPlease Enter A Valid Operation.\033[0m")
+            print("")
+    print("Closing Secure Connection...")
+    time.sleep(1)
+    print("Logging Out...")
+    time.sleep(1)
+    print("Mission Force Server Offline.")
+    time.sleep(1)
+    os.system("cls")
+
+
 def login_system():
     username=["Liyon","Kisha","Kavidaf"]
     password=["Spidy","Tiger","Batman"]
@@ -135,74 +210,6 @@ def terminal():
     print("Author : Liyon")
     exit_reg=input("Press Enter key to Exit...")
     os.system("cls")
-#Login_Page
-print("==========================================================")
-print("          MISSION FORCE SECURE SERVER v1.0")
-print("==========================================================")
-print("")
-print("Security Status : ACTIVE")
-print("Database Status : ENCRYPTED")
-print("Classification  : TOP SECRET")
-print("")
-print("Login Required...")
-login_system()
-print("Initializing Server...")
-time.sleep(1)
-print("[##########] 100%")
-time.sleep(1)
-print("Loading Agent Database...")
-time.sleep(1)
-print("Done.")
-time.sleep(1)
-print("Connecting...")
-time.sleep(1)
-print("Connection Secure.")
-time.sleep(1)
-#main_menu
-os.system("cls")
-while(True):
-    os.system("cls")
-    print("==========================================================")
-    print("          MISSION FORCE CONTROL PANEL")
-    print("==========================================================")
-    print("1. Register New Agent")
-    print("2. View All Agents")
-    print("3. Search Agent")
-    print("4. Update Agent")
-    print("5. Delete Agent")
-    print("6.Secret Terminal")
-    print("7.Exit")
-    menu_com=input("Enter Command ").lower()
-#process
-    if (menu_com == "1"):
-        register()
-    elif (menu_com == "2"):
-        view()
-        exit_reg=input("Press Enter key to Exit...")
-        os.system("cls")
-    elif (menu_com == "3"):
-        search()
-    elif (menu_com == "4"):
-        update()
-        os.system("cls")
-    elif (menu_com == "5"):
-        delete()
-        os.system("cls")
-        continue
-    elif(menu_com == "6"):
-        terminal()
-    elif(menu_com == "7"):
-        break
-    else:
-        print("")
-        print("\033[33mERROR 302\033[0m")
-        print("\033[33mUnknown Command.\033[0m")
-        print("\033[33mPlease Enter A Valid Operation.\033[0m")
-        print("")
-print("Closing Secure Connection...")
-time.sleep(1)
-print("Logging Out...")
-time.sleep(1)
-print("Mission Force Server Offline.")
-time.sleep(1)
-os.system("cls")
+
+if __name__ == "__main__" :
+    main()
