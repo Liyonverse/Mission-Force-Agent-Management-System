@@ -4,9 +4,6 @@ code_name=[]
 real_name=[]
 country=[]
 mission_stts=[]
-#defines
-import os
-import time
 
 #Login_Page
 def main():
@@ -81,7 +78,9 @@ def main():
     time.sleep(1)
     os.system("cls")
 
-
+#defines
+import os
+import time
 def login_system():
     username=["Liyon","Kisha","Kavidaf"]
     password=["Spidy","Tiger","Batman"]
