@@ -7,30 +7,7 @@ mission_stts=[]
 
 #Login_Page
 def main():
-    print("==========================================================")
-    print("          MISSION FORCE SECURE SERVER v1.0")
-    print("==========================================================")
-    print("")
-    print("Security Status : ACTIVE")
-    print("Database Status : ENCRYPTED")
-    print("Classification  : TOP SECRET")
-    print("")
-    print("Login Required...")
-    login_system()
-    print("Initializing Server...")
-    time.sleep(1)
-    print("[##########] 100%")
-    time.sleep(1)
-    print("Loading Agent Database...")
-    time.sleep(1)
-    print("Done.")
-    time.sleep(1)
-    print("Connecting...")
-    time.sleep(1)
-    print("Connection Secure.")
-    time.sleep(1)
-    #main_menu
-    os.system("cls")
+    login()
     while(True):
         os.system("cls")
         print("==========================================================")
@@ -77,6 +54,16 @@ def main():
     print("Mission Force Server Offline.")
     time.sleep(1)
     os.system("cls")
+
+
+
+
+
+
+
+
+
+
 
 #defines
 import os
@@ -209,6 +196,32 @@ def terminal():
     print("Author : Liyon")
     exit_reg=input("Press Enter key to Exit...")
     os.system("cls")
+def login():
+        print("==========================================================")
+        print("          MISSION FORCE SECURE SERVER v1.0")
+        print("==========================================================")
+        print("")
+        print("Security Status : ACTIVE")
+        print("Database Status : ENCRYPTED")
+        print("Classification  : TOP SECRET")
+        print("")
+        print("Login Required...")
+        login_system()
+        print("Initializing Server...")
+        time.sleep(1)
+        print("[##########] 100%")
+        time.sleep(1)
+        print("Loading Agent Database...")
+        time.sleep(1)
+        print("Done.")
+        time.sleep(1)
+        print("Connecting...")
+        time.sleep(1)
+        print("Connection Secure.")
+        time.sleep(1)
+        #main_menu
+        os.system("cls")
+
 
 if __name__ == "__main__" :
     main()
