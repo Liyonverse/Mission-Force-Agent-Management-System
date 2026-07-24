@@ -98,11 +98,11 @@ def register():
     os.system("cls")
     print(">> Register New Agent")
     print("")
-    id.append(input("Agent ID : "))
-    code_name.append(input("Code Name : "))
-    real_name.append(input("Real Name : "))
-    country.append(input("Country : "))
-    mission_stts.append(input("Mission Status : "))
+    id.append(input("Agent ID : ")).strip()
+    code_name.append(input("Code Name : ")).strip().title()
+    real_name.append(input("Real Name : ")).strip().title()
+    country.append(input("Country : ")).strip().title()
+    mission_stts.append(input("Mission Status : ")).strip().title()
     print("")
     print("\033[34mAgent Successfully Registered.\033[0m")
     exit_reg=input("Press Enter key to Exit...")
@@ -122,7 +122,7 @@ def view():
         print("Mission Status : ",mission_stts[count])
         count = count +1
 def delete():
-    del_code=(input("Code Name : "))
+    del_code=(input("Code Name : ")).strip().title()
     print("\033[33mWARNING\033[0m")
     print("")
     print("\033[33mThis operation cannot be undone.\033[0m")
@@ -147,7 +147,7 @@ def delete():
                 count=count+1
                 continue
 def search():
-    search_code=(input("Code Name : "))
+    search_code=(input("Code Name : ")).strip().title()
     count=0
     while(count<len(code_name)):
         if(search_code==code_name[count]):
@@ -173,7 +173,7 @@ def update():
     os.system("cls")
     print(">> Update Agent")
     print("")
-    update_code=input("Enter the Code Name...")
+    update_code=input("Enter the Code Name...").strip().title()
     count=0
     while(count<len(code_name)):
         if(update_code==code_name[count]):
