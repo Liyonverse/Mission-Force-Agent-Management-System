@@ -98,11 +98,11 @@ def register():
     os.system("cls")
     print(">> Register New Agent")
     print("")
-    id.append(input("Agent ID : ")).strip()
-    code_name.append(input("Code Name : ")).strip().title()
-    real_name.append(input("Real Name : ")).strip().title()
-    country.append(input("Country : ")).strip().title()
-    mission_stts.append(input("Mission Status : ")).strip().title()
+    id.append(input("Agent ID : "))
+    code_name.append(input("Code Name : "))
+    real_name.append(input("Real Name : "))
+    country.append(input("Country : "))
+    mission_stts.append(input("Mission Status : "))
     print("")
     print("\033[34mAgent Successfully Registered.\033[0m")
     exit_reg=input("Press Enter key to Exit...")
@@ -147,7 +147,7 @@ def delete():
                 count=count+1
                 continue
 def search():
-    search_code=(input("Code Name : ")).strip().title()
+    search_code=(input("Code Name : "))
     count=0
     while(count<len(code_name)):
         if(search_code==code_name[count]):
